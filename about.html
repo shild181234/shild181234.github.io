@@ -60,11 +60,41 @@
       text-align: justify;
     }
 
+    .about-layout {
+      display: flex;
+      gap: 35px;
+      align-items: flex-start;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-photo {
+      width: 260px;
+      border-radius: 8px;
+    }
+
     footer {
       text-align: center;
       color: #777;
       padding: 25px;
       border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 24px 30px;
+      }
+
+      .about-layout {
+        flex-direction: column;
+      }
+
+      .about-photo {
+        width: 100%;
+        max-width: 320px;
+      }
     }
   </style>
 </head>
@@ -85,17 +115,24 @@
 
   <h1>About me</h1>
 
-  <p>
-    I am currently a postdoctoral fellow in the Department of Physical and Environmental Sciences
-    at the University of Toronto. My research focuses on physical limnology, with a specific focus on dissolved oxygen dynamics, lake thermal structure, and fish habitat use
-    in seasonally ice-covered lakes.
-  </p>
+  <div class="about-layout">
 
-  <p>
-    I received my PhD degree from Tsinghua University, where I worked
-    on hydro-thermodynamic processes
-    in regulated river-reservoir systems. 
-  </p>
+    <div class="about-text">
+      <p>
+        I am currently a postdoctoral fellow in the Department of Physical and Environmental Sciences
+        at the University of Toronto. My research focuses on physical limnology, with a specific focus on
+        dissolved oxygen dynamics, lake thermal structure, and fish habitat use in seasonally ice-covered lakes.
+      </p>
+
+      <p>
+        I received my PhD degree from Tsinghua University, where I worked on hydro-thermodynamic processes
+        in regulated river-reservoir systems.
+      </p>
+    </div>
+
+    <img src="contact-photo.jpg" alt="Lidi Shi" class="about-photo">
+
+  </div>
 
   <h2>Education and Work Background</h2>
 
@@ -112,7 +149,6 @@
     Tsinghua University, Beijing, China<br>
     Supervisor: Prof. Binliang Lin
   </p>
-
 
   <h2>Research Techniques and Skills</h2>
 
