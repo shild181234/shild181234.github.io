@@ -42,7 +42,7 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 950px;
       margin: 45px auto;
       padding: 0 25px;
     }
@@ -52,11 +52,48 @@
       padding-bottom: 10px;
     }
 
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 35px;
+      align-items: start;
+      margin-top: 25px;
+    }
+
+    .contact-photo-box {
+      text-align: center;
+    }
+
+    .contact-photo-box img {
+      width: 320px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      background: #fafafa;
+    }
+
     .contact-box {
       border: 1px solid #ddd;
       background: #fafafa;
       padding: 25px;
-      margin-top: 25px;
+      margin-top: 0;
+      font-size: 15px;
+    }
+
+    .contact-box p {
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+    .contact-box a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -64,6 +101,26 @@
       color: #777;
       padding: 25px;
       border-top: 1px solid #eee;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        padding: 25px;
+      }
+
+      nav a {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-photo-box img {
+        width: 300px;
+      }
     }
   </style>
 </head>
@@ -84,36 +141,36 @@
 
   <h1>Contact me</h1>
 
-<div class="contact-layout">
+  <div class="contact-layout">
 
-  <div class="contact-photo-box">
-    <img src="contact-photo.jpg" alt="Lidi Shi presenting at ASLO-SIL 2026">
+    <div class="contact-photo-box">
+      <img src="contact-photo.jpg" alt="Lidi Shi presenting at ASLO-SIL 2026">
+    </div>
+
+    <div class="contact-box">
+      <p>
+        <strong>Lidi Shi</strong><br>
+        Postdoctoral Fellow<br>
+        Department of Physical and Environmental Sciences<br>
+        University of Toronto<br>
+        Toronto, Ontario, Canada
+      </p>
+
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:lidi.shi@utoronto.ca">lidi.shi@utoronto.ca</a><br>
+        <a href="mailto:shild18@163.com">shild18@163.com</a>
+      </p>
+
+      <p>
+        <strong>ResearchGate:</strong><br>
+        <a href="https://www.researchgate.net/profile/Lidi-Shi" target="_blank">
+          researchgate.net/profile/Lidi-Shi
+        </a>
+      </p>
+    </div>
+
   </div>
-
-  <div class="contact-box">
-    <p>
-      <strong>Lidi Shi</strong><br>
-      Postdoctoral Fellow<br>
-      Department of Physical and Environmental Sciences<br>
-      University of Toronto<br>
-      Toronto, Ontario, Canada
-    </p>
-
-    <p>
-      Email:
-      < a href="mailto:lidi.shi@utoronto.ca">lidi.shi@utoronto.ca</ a><br>
-      < a href="mailto:shild18@163.com">shild18@163.com</ a>
-    </p>
-
-    <p>
-      RG:
-      < a href="https://www.researchgate.net/profile/Lidi-Shi" target="_blank">
-        researchgate
-      </a>
-    </p>
-  </div>
-
-</div>
 
 </div>
 
