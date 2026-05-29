@@ -103,28 +103,42 @@
       font-size: 14px;
     }
 
-    .research-icons {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      text-align: center;
-      padding: 70px 80px 60px;
-      gap: 30px;
-    }
+.research-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  padding: 55px 80px 65px;
+  background: #ffffff;
+  text-align: center;
+}
 
-    .icon-card {
-      font-family: Georgia, "Times New Roman", serif;
-      font-style: italic;
-      font-size: 28px;
-      color: #111;
-    }
+.image-card {
+  text-decoration: none;
+  color: #111;
+  display: block;
+}
 
-    .icon {
-      font-size: 54px;
-      color: #6d89bd;
-      display: block;
-      margin-bottom: 12px;
-      font-style: normal;
-    }
+.image-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+  border: none;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.03);
+  opacity: 0.88;
+}
+
+.image-title {
+  margin-top: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-style: italic;
+  line-height: 1.1;
+}
 
     footer {
       text-align: center;
